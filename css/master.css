@@ -1,0 +1,251 @@
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.overlay {
+  color:#fff;
+  position:absolute;
+  z-index:1;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.menu {
+  text-align:center;
+  height:84px;
+  margin: 0 auto;
+}
+.menu_item {
+  color:black;
+  font-size:18px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.menu_item:hover {
+  color:#eb1217;
+  border-bottom:#eb1217 4px solid;
+}
+.title {
+  color:#eb1217;
+  font-size:52px;
+}
+.sub_title {
+  font-weight:bold;
+  color:#f4f4f4;
+  font-size:20px;
+  display: block;
+}
+.title-wrapper {
+  display: inline-block;
+}
+.title-wrapper img{
+  width: 250px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  width: 100%;
+  min-height: 600px;
+}
+.carousel-caption{
+  float: right;
+}
+.portofolio{
+  height:400px;
+  padding: .5em;
+}
+.portofolio img{
+  height:100%;
+  width:100%;
+}
+.portofolio .overlay{
+  opacity: 1;
+}
+.overlay:hover{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.portofolio:hover .overlay{
+  opacity: 1;
+}
+.tv_container{
+  background: url('img/1500X500.png');
+  width: 100%;
+}
+.foto-profil-review{
+
+}
+.isi-review{
+  text-align: justify;
+  padding-left: 2em;
+}
+
+#Review .item{
+  background-color: white;
+  padding: 3em;
+  padding-left: 7em;
+}
+#Review img{
+    min-height: 195px;
+}
+#Review .carousel-indicators li{
+  background-color:#7f8c8d;
+}
+#Review{
+  margin-bottom: 0;
+}
+#Partner .carousel-inner{
+  height: 250px;
+  padding-left: 5em;
+}
+#Partner .item{
+  background-color: white;
+  height: 100px;
+}
+#Partner .col-md-2{
+  margin: 1em;
+}
+#Partner img{
+    min-height: 150px;
+    width: 100%;
+}
+#Partner .carousel-indicators li{
+  background-color:#7f8c8d;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+
+}
+.sosial-media i{
+  margin-right: 3px;
+}
+.alamat{
+  text-align: justify;
+}
+.copyright h3{
+  text-align: center;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 991px){
+  .menu_item{
+    font-size: 15px;
+    padding: 5px;
+  }
+  .title-wrapper img{
+    width: 150px;
+  }
+  .whyus{
+    height: 500px;
+  }
+  .whyus img{
+    width: 100%;
+  }
+  .whyus .isi{
+
+  }
+
+  #Review .carousel-inner{
+    overflow: visible;
+  }
+  #Review img{
+    width: 200px;
+    height: 100px;
+  }
+  #Review .item{
+    padding-left: 0;
+  }
+  .isi-review{
+    padding-left: 15em;
+  }
+  #Partner .carousel-inner{
+    height: 150px;
+    padding-left: 3em;
+  }
+  #Partner img{
+      min-height: 50px;
+      width: 18%;
+      margin-left: 1em;
+      float: left;
+      position: relative;
+  }
+  #Partner .col-md-2{
+    margin: 0;
+  }
+  .footer{
+
+  }
+
+
+}
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption{
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    right: 0;
+    left: 45%;
+  }
+}
